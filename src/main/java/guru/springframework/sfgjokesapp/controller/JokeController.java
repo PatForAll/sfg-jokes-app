@@ -14,10 +14,10 @@ public class JokeController {
         this.jokeService = jokeService;
     }
 
-    @RequestMapping("/joke")
-    public String getJoke(Model model) {
+    @RequestMapping({"/", ""})
+    public String showJoke(Model model) {
         model.addAttribute("joke", jokeService.getJoke());
 
-        return "joke";
+        return "index";
     }
 }
