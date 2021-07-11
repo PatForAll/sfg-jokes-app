@@ -5,5 +5,5 @@ import org.springframework.stereotype.Service;
 
 public interface JokeService {
 
-    String tellJoke();
+    String getJoke();
 }
